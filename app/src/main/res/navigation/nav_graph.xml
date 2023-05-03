@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/eventsListFragment">
+
+    <fragment
+        android:id="@+id/eventsListFragment"
+        android:name="com.bignerdranch.android.eventfinder.ui.main.EventsListFragment"
+        android:label="EventsListFragment" >
+        <action
+            android:id="@+id/show_event"
+            app:destination="@id/eventPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventPageFragment"
+        android:name="com.bignerdranch.android.eventfinder.ui.main.EventPageFragment"
+        android:label="EventPageFragment">
+        <argument
+            android:name="eventPageUri"
+            app:argType="android.net.Uri" />
+        </fragment>
+</navigation>
