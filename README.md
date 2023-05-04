@@ -6,7 +6,7 @@ An Android-based application which uses technologies such as Retrofit, Moshi, an
 
 * Retrieves user's real time location
 * Displays title, time, and image for nearby events
-* Redirects user to event page using an in-app webview
+* Redirects user to event page using an in-app WebView
 
 #### Screenshots
 
